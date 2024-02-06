@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="calculatorDisplay">
+            <input type="text" id="display" readonly>
+            </input> <!--Display-->
+        </div>
+
+        <div class="numbersContainer">
+
+            <div class="linhaUm">
+                <button onclick="mostrarDisplay('.')" inputmode="(',')" class="numbers">,</button>
+                <button onclick="zerarDisplay()" class="numbers">C</button>
+                <button onclick="mostrarDisplay('/')" class="numbers">÷</button>
+                <button onclick="calcularResultado()" class="numbers">=</button>
+            </div>
+
+            <div class="linhaUm">
+                <button onclick="mostrarDisplay('7')" class="numbers">7</button>
+                <button onclick="mostrarDisplay('8')" class="numbers">8</button>
+                <button onclick="mostrarDisplay('9')" class="numbers">9</button>
+                <button onclick="mostrarDisplay('*')" class="numbers">x</button>
+            </div> <!--Numeros de 7 a 9-->
+            
+            <div class="linhaDois">
+                <button onclick="mostrarDisplay('4')" class="numbers">4</button>
+                <button onclick="mostrarDisplay('5')" class="numbers">5</button>
+                <button onclick="mostrarDisplay('6')" class="numbers">6</button>
+                <button onclick="mostrarDisplay('-')" class="numbers">-</button>
+            </div> <!--Numeros de 4 a 6-->
+
+            <div class="linhaTres">
+                <button onclick="mostrarDisplay('1')" class="numbers">1</button>
+                <button onclick="mostrarDisplay('2')" class="numbers">2</button>
+                <button onclick="mostrarDisplay('3')" class="numbers">3</button>
+                <div onclick="mostrarDisplay('+')" class="numbers">+</div>
+            </div> <!--Numeros de 1 a 3-->
+        </div>
+    </div> <!--Corpo calculadora-->
+
+    <script src="script.js"></script>
+</body>
+</html>
